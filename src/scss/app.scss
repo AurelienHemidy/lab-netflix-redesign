@@ -1,0 +1,20 @@
+/**
+* Variables
+*/
+@import './variables/variables.scss';
+
+/**
+* Reset
+*/
+@import './_reset.scss';
+
+/**
+* Base
+*/
+@import './base/_base.scss';
+
+/**
+* Components
+*/
+@import './components/loader.scss';
+@import './components/backgroundLines.scss';

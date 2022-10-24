@@ -1,0 +1,29 @@
+.backgroundLinesContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+
+  height: 100%;
+  width: 100vw;
+
+  //   background-color: red;
+
+  @for $i from 1 through 3 {
+    &__line-#{$i} {
+      position: absolute;
+
+      top: 0;
+      left: (100 / 6) * (1% * $i);
+
+      height: 100%;
+      width: 1px;
+
+      background-color: $secondary-color;
+
+      opacity: 0.5;
+    }
+    $i: $i + 2;
+  }
+}
