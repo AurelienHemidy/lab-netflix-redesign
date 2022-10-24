@@ -29,6 +29,15 @@ class App {
     // this.setupResources();
     // this.setupEventListeners();
     // this.loadResources();
+
+    this.heroSection = document.querySelectorAll('.heroContainer__genreSection');
+    console.log(this.heroSection);
+
+    this.heroSection.forEach((section) => {
+      section.addEventListener('click', (e) => {
+        console.log(e.target);
+      });
+    });
   }
 
   registerLoaders() {
