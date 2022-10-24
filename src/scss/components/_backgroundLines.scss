@@ -8,10 +8,11 @@
   height: 100%;
   width: 100vw;
 
-  //   background-color: red;
-
   @for $i from 1 through 3 {
-    &__line-#{$i} {
+    $index: $i;
+    $i: ($i * 2) - 1;
+
+    &__line-#{$index} {
       position: absolute;
 
       top: 0;
@@ -24,6 +25,5 @@
 
       opacity: 0.5;
     }
-    $i: $i + 2;
   }
 }
