@@ -1,0 +1,15 @@
+.searchContainer {
+  grid-area: search-section;
+
+  padding-top: $padding-top;
+  padding-left: $padding;
+  padding-right: $padding;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__image {
+    width: 20px;
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  position: absolute;
+
+  left: 50%;
+  top: 45px;
+
+  transform: translate3D(-50%, 0, 0) rotate3d(1, 0, 0, 40deg);
+
+  color: $primary-color;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: 'Bebas Neue', sans-serif;
+}

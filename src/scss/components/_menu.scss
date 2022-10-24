@@ -1,0 +1,19 @@
+.menuContainer {
+  grid-area: menu-section;
+
+  padding-left: $padding;
+
+  display: flex;
+  align-items: center;
+
+  &__list {
+    list-style-type: none;
+
+    &--item {
+      line-height: 3rem;
+      letter-spacing: 1px;
+
+      cursor: pointer;
+    }
+  }
+}

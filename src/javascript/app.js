@@ -21,16 +21,14 @@ import bindAll from './utils/bindAll';
 
 class App {
   constructor() {
-    this._resourceLoader = new ResourceLoader();
-    this.loaderUI = new LoaderUI('loader');
-    this.datas = null;
-
-    this._bindAll();
-
-    this.registerLoaders();
-    this.setupResources();
-    this.setupEventListeners();
-    this.loadResources();
+    // this._resourceLoader = new ResourceLoader();
+    // this.loaderUI = new LoaderUI('loader');
+    // this.datas = null;
+    // this._bindAll();
+    // this.registerLoaders();
+    // this.setupResources();
+    // this.setupEventListeners();
+    // this.loadResources();
   }
 
   registerLoaders() {
@@ -58,8 +56,6 @@ class App {
     // console.log("loaded");
     this.datas = e;
     this.loaderUI.toggleLoader();
-
-    // console.log(this._resourceLoader.get('Duck'))
   }
 
   _bindAll() {
