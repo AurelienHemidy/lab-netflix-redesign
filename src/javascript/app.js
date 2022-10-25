@@ -2,6 +2,7 @@
  * Base
  */
 import '../scss/app.scss';
+import Gallery from './Components/gallery';
 
 /**
  * Javascript
@@ -9,6 +10,7 @@ import '../scss/app.scss';
 
 class App {
   constructor() {
+    this.gallery = new Gallery();
     this.isOneHeroSectionActive = false;
     this.heroSection = document.querySelector('.heroContainer');
     this.heroSectionImage = document.querySelectorAll('.heroContainer__genreSection');
