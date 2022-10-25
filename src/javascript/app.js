@@ -15,6 +15,7 @@ class App {
     this.heroSectionImage.forEach((image) => {
       // Add onCLick element event
       image.addEventListener('click', (e) => {
+        console.log('clicked');
         // Remove the active class of the previous clicked element
         this.heroSectionImage.forEach((image) => {
           image.classList.remove('active');
@@ -29,6 +30,7 @@ class App {
 
     // Disable if click everywhere else
     window.addEventListener('click', (e) => {
+      // Check if on parent of element has the following class
       if (e.target.closest('.heroContainer')) return;
 
       this.heroSectionImage.forEach((image) => {
