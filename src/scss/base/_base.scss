@@ -11,9 +11,16 @@ body {
 
   font-family: 'Roboto';
 
+  scroll-behavior: smooth;
+
   // padding-top: 30px;
   // padding-left: 50px;
   // padding-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 html {

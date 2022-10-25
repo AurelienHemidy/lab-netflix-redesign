@@ -36,6 +36,12 @@
         transform: scale(1.1);
         filter: brightness(0.7);
       }
+
+      .heroContainer__genreSection--gallery-link {
+        &::after {
+          transform: scaleX(1);
+        }
+      }
     }
 
     img {
@@ -56,14 +62,17 @@
 
       transform: translate3d(-50%, -50%, 0);
 
+      pointer-events: none;
+
       z-index: 9999;
 
       text-align: center;
 
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 0.75rem;
+      font-size: 2rem;
       letter-spacing: 1px;
+      font-family: 'Bebas Neue';
 
       transition: 1s all ease 0.75s;
     }
@@ -82,6 +91,7 @@
         transform: translateY(100%);
 
         transition: 0.5s all ease;
+        font-family: 'Bebas Neue';
       }
 
       p {
@@ -104,8 +114,6 @@
       position: absolute;
       left: 10%;
       bottom: 50px;
-
-      pointer-events: none;
 
       display: flex;
       align-items: center;
@@ -175,7 +183,7 @@
       right: 10%;
       bottom: 50px;
 
-      pointer-events: none;
+      // pointer-events: none;
 
       display: flex;
       align-items: center;
@@ -235,6 +243,43 @@
       }
 
       z-index: 9999;
+    }
+
+    &--gallery-link {
+      position: absolute;
+
+      left: 50%;
+      bottom: 30px;
+
+      transform: translateX(-50%);
+
+      z-index: 9999;
+
+      font-size: 1.5rem;
+      font-family: 'Bebas Neue';
+
+      opacity: 0;
+
+      transition: 0.5s all $ease-slow;
+
+      &::after {
+        position: absolute;
+        content: '';
+
+        bottom: -2px;
+
+        height: 2px;
+        width: 100%;
+
+        left: 0;
+
+        background-color: $secondary-color;
+
+        transform-origin: left;
+        transform: scaleX(0);
+
+        transition: 1.5s all $ease-slow;
+      }
     }
 
     &.active {
@@ -297,6 +342,12 @@
         }
       }
 
+      .heroContainer__genreSection--gallery-link {
+        opacity: 1;
+
+        transition: 1.5s all $ease-slow 1.5s;
+      }
+
       img {
         filter: brightness(0.5);
       }
@@ -311,14 +362,14 @@
       }
     }
   }
+}
 
-  @keyframes button-anim {
-    0% {
-      stroke-dasharray: 472;
-    }
-    100% {
-      stroke-dasharray: 232;
-    }
+@keyframes button-anim {
+  0% {
+    stroke-dasharray: 472;
+  }
+  100% {
+    stroke-dasharray: 232;
   }
 }
 
