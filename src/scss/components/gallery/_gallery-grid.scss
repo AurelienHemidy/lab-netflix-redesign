@@ -1,0 +1,30 @@
+.gallerySection {
+  height: 100vh;
+
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(50, 2%);
+  grid-template-rows: repeat(50, 2%);
+
+  &__title {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 3rem;
+    font-family: 'Bebas Neue';
+  }
+
+  &__image-container {
+    transition: 0.1s all;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

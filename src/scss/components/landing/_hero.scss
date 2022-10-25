@@ -262,6 +262,8 @@
 
       transition: 0.5s all $ease-slow;
 
+      pointer-events: none;
+
       &::after {
         position: absolute;
         content: '';
@@ -324,7 +326,6 @@
         }
       }
       .heroContainer__genreSection--add {
-        // pointer-events: all;
         p {
           transform: translateY(0);
           transition: 1.5s all $ease-slow 0.5s;
@@ -346,6 +347,8 @@
         opacity: 1;
 
         transition: 1.5s all $ease-slow 1.5s;
+
+        pointer-events: all;
       }
 
       img {
