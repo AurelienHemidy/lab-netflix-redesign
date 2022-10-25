@@ -73,13 +73,15 @@
       left: 10%;
       top: 20%;
 
+      pointer-events: none;
+
       h3 {
         font-size: 3.5rem;
         font-weight: 600;
 
         transform: translateY(100%);
 
-        transition: 1s all ease;
+        transition: 0.5s all ease;
       }
 
       p {
@@ -87,7 +89,7 @@
         right: 0;
         top: 0;
 
-        transition: 1s all ease;
+        transition: 0.5s all ease;
 
         opacity: 0;
         transform: translate(120%, 100%);
@@ -103,6 +105,8 @@
       left: 10%;
       bottom: 50px;
 
+      pointer-events: none;
+
       display: flex;
       align-items: center;
 
@@ -116,7 +120,7 @@
 
         transform: translateY(400%);
 
-        transition: 1s all ease;
+        transition: 0.5s all ease;
       }
 
       button {
@@ -171,6 +175,8 @@
       right: 10%;
       bottom: 50px;
 
+      pointer-events: none;
+
       display: flex;
       align-items: center;
 
@@ -184,7 +190,7 @@
 
         transform: translateY(400%);
 
-        transition: 1s all ease;
+        transition: 0.5s all ease;
       }
 
       button {
@@ -202,7 +208,7 @@
 
         cursor: pointer;
 
-        transition: 1s all ease;
+        transition: 0.5s all ease;
 
         .border {
           position: absolute;
@@ -254,6 +260,7 @@
         }
       }
       .heroContainer__genreSection--watch {
+        pointer-events: all;
         p {
           transform: translateY(0);
           transition: 1.5s all $ease-slow 0.5s;
@@ -271,6 +278,7 @@
         }
       }
       .heroContainer__genreSection--add {
+        pointer-events: all;
         p {
           transform: translateY(0);
           transition: 1.5s all $ease-slow 0.5s;

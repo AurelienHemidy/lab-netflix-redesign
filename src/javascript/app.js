@@ -19,11 +19,12 @@ class App {
         // Remove the active class of the previous clicked element
         this.heroSectionImage.forEach((image) => {
           image.classList.remove('active');
-          image.classList.add('disabled');
+          // image.classList.add('disabled');
         });
 
         // Add the active class to the current clicked element
-        e.target.parentElement.classList.remove('disabled');
+        // e.target.parentElement.classList.remove('disabled');
+        console.log(e);
         e.target.parentElement.classList.add('active');
       });
     });
